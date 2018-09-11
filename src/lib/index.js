@@ -6,7 +6,7 @@ Tawk.install = function (Vue, options) {
     let Tawk_LoadStart = new Date()
     let s1 = document.createElement("script")
     let s0 = document.getElementsByTagName("script")[0]
-    s1.async = true
+    s1.defer = true
     s1.src = options.tawkSrc
     s1.charset = 'UTF-8'
     s1.setAttribute('crossorigin', '*')
