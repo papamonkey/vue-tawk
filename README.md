@@ -18,7 +18,7 @@ First you'll need to register the plugin
 Second you should had a account of https://www.tawk.to/
 
 ``` js
-import Tawk from 'vue-echo'
+import Tawk from 'vue-tawk'
   
 Vue.use(Tawk, {
     tawkSrc: 'YOU_TAWK_SRC'
