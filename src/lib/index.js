@@ -16,15 +16,13 @@ Tawk.install = function (Vue, options) {
   Vue.prototype.$Tawk.$createChat()
   Vue.prototype.$Tawk.$updateChatUser = function (user) {
     if (!user) return
-    window.Tawk_API.onLoad = function () {
-      window.Tawk_API.setAttributes({
-        'name': user.name,
-        'email': user.email,
-        'hash': user.emailHmac
-      }, function (error) {
-        console.log(error)
-      })
-    }
+    window.Tawk_API.setAttributes({
+      'name': user.name,
+      'email': user.email,
+      'hash': user.hash
+    }, function (error) {
+      console.log(error)
+    })
   }
   Vue.prototype.$Tawk.$endChat = function () {
     window.Tawk_API.endChat()
