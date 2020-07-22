@@ -21,7 +21,9 @@ Tawk.install = function (Vue, options) {
       'email': user.email,
       'hash': user.hash
     }, function (error) {
-      console.log(error)
+      if (!!error) {
+        console.log(error);
+      }
     })
   }
   Vue.prototype.$Tawk.$endChat = function () {
