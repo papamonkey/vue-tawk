@@ -1,7 +1,7 @@
 {
   "name": "vue-tawk",
   "description": "tawk.js for vue 2.x,the component about tawk.io of online chat",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "author": "e <734452449@qq.com>",
   "license": "MIT",
   "private": false,

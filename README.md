@@ -25,6 +25,11 @@ Vue.use(Tawk, {
 })
 ```
 
+The chat is not automatically started. To do that, you must execute this:
+``` js
+this.$Tawk.$startChat();
+```
+
 ### Set the visitor name and email
 
 ```js
@@ -41,4 +46,25 @@ the object of user should like that
 you should close the chat when user logout your website
 ```js
 this.$Tawk.$endChat()
+```
+
+### Widget Operations
+you can toggle, hide and show widget with the following command:
+```js
+this.$Tawk.$toggleVisibility()
+this.$Tawk.$showWidget()
+this.$Tawk.$hideWidget()
+```
+
+### Chat Operations
+you can toggle, minimize and maximize the chat with the following command:
+```js
+this.$Tawk.$toggle()
+this.$Tawk.$maximize()
+this.$Tawk.$minimize()
+```
+
+You can also open the chat in a pop-up this way:
+```js
+this.$Tawk.$popup()
 ```
