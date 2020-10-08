@@ -1,7 +1,7 @@
 {
   "name": "vue-tawk",
   "description": "tawk.js for vue 2.x,the component about tawk.io of online chat",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "e <734452449@qq.com>",
   "license": "MIT",
   "private": false,
@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --mode=production"
   },
   "dependencies": {
     "vue": "^2.5.16"
@@ -36,7 +36,7 @@
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.12.0",
-    "webpack-cli": "^2.1.4",
+    "webpack-cli": "^2.1.5",
     "webpack-dev-server": "^2.11.2"
   }
 }
