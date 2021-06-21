@@ -24,7 +24,7 @@ $Tawk.$updateChatUser = function (user) {
 }
 
 $Tawk.$setAttributes = function (attributes) {
-  if (!attributes) return
+  if (!attributes || !window || !window.Tawk_API || !window.Tawk_API.setAttributes) return
   window.Tawk_API.setAttributes(attributes)
 }
 $Tawk.$endChat = function () {
