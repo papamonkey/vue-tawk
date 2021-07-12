@@ -37,6 +37,26 @@ the object of user should like that
 }
 ```
 
+### show Widget
+you should close the chat when user logout your website
+```js
+this.$Tawk.$showWidget()
+```
+### hide Widget
+you should close the chat when user logout your website
+```js
+this.$Tawk.$hideWidget()
+```
+### Toggle Visibility
+you should close the chat when user logout your website
+```js
+this.$Tawk.$toggleVisibility()
+```
+### Set Attributes
+you should close the chat when user logout your website
+```js
+this.$Tawk.$setAttributes(attributes)
+```
 ### Ends the current ongoing chat.
 you should close the chat when user logout your website
 ```js
