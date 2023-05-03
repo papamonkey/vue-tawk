@@ -73,5 +73,15 @@ Tawk.install = function (Vue, options) {
       window.Tawk_API.showWidget();
     }
   }
+  Vue.prototype.$Tawk.$onChatStarted = (callback) => {
+    if (isInit()) {
+      window.Tawk_API.onChatStarted = callback;
+    }
+  }
+  Vue.prototype.$Tawk.$onChatEnded  = (callback) => {
+    if (isInit()) {
+      window.Tawk_API.onChatEnded  = callback;
+    }
+  }
 }
 export default Tawk
