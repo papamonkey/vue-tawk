@@ -83,5 +83,15 @@ Tawk.install = function (Vue, options) {
       window.Tawk_API.onChatEnded  = callback;
     }
   }
+  Vue.prototype.$Tawk.$onChatHidden  = (callback) => {
+    if (isInit()) {
+      window.Tawk_API.onChatHidden  = callback;
+    }
+  }
+  Vue.prototype.$Tawk.$onChatMinimized  = (callback) => {
+    if (isInit()) {
+      window.Tawk_API.onChatMinimized  = callback;
+    }
+  }
 }
 export default Tawk
