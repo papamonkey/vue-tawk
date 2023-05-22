@@ -78,19 +78,19 @@ Tawk.install = function (Vue, options) {
       window.Tawk_API.onChatStarted = callback;
     }
   }
-  Vue.prototype.$Tawk.$onChatEnded  = (callback) => {
+  Vue.prototype.$Tawk.$onChatEnded = (callback) => {
     if (isInit()) {
-      window.Tawk_API.onChatEnded  = callback;
+      window.Tawk_API.onChatEnded = callback;
     }
   }
-  Vue.prototype.$Tawk.$onChatHidden  = (callback) => {
+  Vue.prototype.$Tawk.$onChatHidden = (callback) => {
     if (isInit()) {
-      window.Tawk_API.onChatHidden  = callback;
+      window.Tawk_API.onChatHidden = callback;
     }
   }
-  Vue.prototype.$Tawk.$onChatMinimized  = (callback) => {
+  Vue.prototype.$Tawk.$onChatMinimized = (callback) => {
     if (isInit()) {
-      window.Tawk_API.onChatMinimized  = callback;
+      window.Tawk_API.onChatMinimized = callback;
     }
   }
 }
